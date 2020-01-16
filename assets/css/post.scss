@@ -7,6 +7,7 @@
   © 2019 Cotes Chung
   MIT License
 */
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:400,700&display=swap&subset=korean');
 
 .post img {
   margin-top: .5rem;
@@ -119,7 +120,7 @@
 
 #toc-wrapper>h3 {
   font-size: 1rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Black Han Sans', sans-serif;
   color: gray;
 }
 
