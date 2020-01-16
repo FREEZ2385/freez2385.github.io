@@ -102,7 +102,7 @@ defaults:
       location: Post
       breadcrumb:
         -
-          label: Posts
+          label: 홈
           url: /
   -
     scope:
@@ -116,7 +116,7 @@ defaults:
       location: Tag
       breadcrumb:
         -
-          label: Home
+          label: 홈
           url: /
         -
           label: Tags
@@ -128,10 +128,10 @@ defaults:
       location: Category
       breadcrumb:
         -
-          label: Home
+          label: 홈
           url: /
         -
-          label: Categories
+          label: 카테고리
           url: /tabs/categories/
   -
     scope:
@@ -141,7 +141,7 @@ defaults:
       dynamic_title: true    # Hide title in mobile screens.
       breadcrumb:
         -
-          label: Home
+          label: 홈
           url: /
   -
     scope:

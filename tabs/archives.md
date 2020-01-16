@@ -1,5 +1,5 @@
 ---
-title: Archives
+title: 포스트 이력
 
 # The Archives of posts.
 # v2.0

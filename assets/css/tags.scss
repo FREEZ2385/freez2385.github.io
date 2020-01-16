@@ -9,6 +9,8 @@
 * MIT License
 */
 
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:400,700&display=swap&subset=korean');
+
 .tag {
   border-radius: 0.7em;
   padding: 6px 8px 7px;
@@ -22,7 +24,7 @@
 .tag span {
   margin-left: 0.6em;
   font-size: 0.7em;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 a.tag:hover {

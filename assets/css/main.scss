@@ -9,7 +9,7 @@
 */
 
 @import "_fonts";
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:400,700&display=swap&subset=korean');
+@import "_fonts-kr";
 @import "_dark/dark-main";
 
 html, body {
@@ -27,7 +27,7 @@ body {
   background: var(--main-wrapper-bg, #fafafa);
   color: var(--text-color, #212529);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Noto Sans KR', 'Black Han Sans', sans-serif;
+  font-family: 'Noto Serif KR', 'Black Han Sans', sans-serif;
 }
 
 /*--- sidebar layout ---*/
@@ -62,6 +62,7 @@ body {
   border-radius: 0;
   font-size: .95rem;
   font-weight: 400;
+  font-family: 'Noto Sans KR', 'Black Han Sans', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -189,6 +190,7 @@ body {
   color: #b6b6b6;
   font-weight: 900;
   font-size: 1.5rem;
+  font-family: 'Noto Sans KR', 'Black Han Sans', sans-serif;
   letter-spacing: .5px;
 }
 
@@ -204,6 +206,7 @@ body {
   line-height: 1.2rem;
   word-spacing: 1px;
   margin: .5rem 1.5rem 2rem 1.5rem;
+  font-family: 'Noto Sans KR', 'Black Han Sans', sans-serif;
 }
 
 .sidebar-expand {
@@ -259,6 +262,7 @@ body {
   font-size: 1rem;
   color: gray;
   padding-left: .5rem;
+  font-family: 'Noto Sans KR', 'Black Han Sans', sans-serif;
 }
 
 #breadcrumb span:not(:last-child)::after {
@@ -503,7 +507,7 @@ footer .license a {
   margin-bottom: 0;
   letter-spacing: -0.02em;
   font-size: 1rem;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 .access .post-content {

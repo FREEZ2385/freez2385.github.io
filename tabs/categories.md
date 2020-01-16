@@ -41,10 +41,10 @@ title: 카테고리
         <span class="text-muted small font-weight-light pl-2">
         {% if sub_categories_size > 0 %}
           {{ sub_categories_size }}
-          {% if sub_categories_size > 1 %}categories{% else %}category{% endif %},
+          {% if sub_categories_size > 1 %}카테고리{% else %}카테고리{% endif %},
         {% endif %}
           {{ top_posts_size }}
-          post{% if top_posts_size > 1 %}s{% endif %}
+          포스트{% if top_posts_size > 1 %}{% endif %}
         </span>
       </span>
 
@@ -68,7 +68,7 @@ title: 카테고리
           <i class="far fa-folder fa-fw"></i>&nbsp;<a href="{{ site.baseurl }}/categories/{{ sub_category | replace: ' ', '-' | downcase | url_encode }}/">{{ sub_category }}</a>
           {% assign posts_size = site.categories[sub_category] | size %}
           <span class="text-muted small font-weight-light pl-2">{{ posts_size }}
-            post{% if posts_size > 1 %}s{% endif %}
+            포스트{% if posts_size > 1 %}{% endif %}
           </span>
         </li>
         {% endfor %}
