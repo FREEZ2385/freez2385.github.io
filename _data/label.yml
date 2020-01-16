@@ -13,7 +13,7 @@ tabs:
 
 panel:
   lastmod: "최근 포스트"
-  trending_tags: "Tags"
+  trending_tags: "태그"
   toc: "목차"
 
 post:
