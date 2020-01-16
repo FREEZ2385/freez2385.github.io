@@ -9,6 +9,7 @@
 */
 
 @import "_fonts";
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:400,700&display=swap&subset=korean');
 @import "_dark/dark-main";
 
 html, body {
@@ -26,7 +27,7 @@ body {
   background: var(--main-wrapper-bg, #fafafa);
   color: var(--text-color, #212529);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'Noto Sans KR', 'Black Han Sans', sans-serif;
 }
 
 /*--- sidebar layout ---*/
@@ -502,7 +503,7 @@ footer .license a {
   margin-bottom: 0;
   letter-spacing: -0.02em;
   font-size: 1rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 .access .post-content {
