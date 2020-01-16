@@ -7,13 +7,13 @@
 tabs:
   - { name: "홈", icon: 'fas fa-home' }
   - { name: "기술별 분류", path: tabs, url: categories, icon: 'fas fa-stream' }
-  - { name: "태그", path: tabs, url: tags, icon: 'fas fa-tags' }
+  - { name: "Tags", path: tabs, url: tags, icon: 'fas fa-tags' }
   - { name: "포스트 이력", path: tabs, url: archives, icon: 'fas fa-archive'}
   - { name: "About", path: tabs, url: about, icon: 'fas fa-info'}
 
 panel:
   lastmod: "최근 포스트"
-  trending_tags: "태그 모음"
+  trending_tags: "Tags"
   toc: "목차"
 
 post:
