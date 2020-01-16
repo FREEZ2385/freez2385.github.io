@@ -12,9 +12,9 @@ tabs:
   - { name: "About", path: tabs, url: about, icon: 'fas fa-info'}
 
 panel:
-  lastmod: "Recent Update"
-  trending_tags: "Trending Tags"
-  toc: "Contents"
+  lastmod: "최근 포스트"
+  trending_tags: "태그 모음"
+  toc: "목차"
 
 post:
   relate_posts: "Further Reading"
