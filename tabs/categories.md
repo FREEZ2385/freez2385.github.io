@@ -1,5 +1,5 @@
 ---
-title: Categories
+title: 카테고리
 
 # All the Categories of posts
 # v2.0
