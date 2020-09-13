@@ -7,7 +7,7 @@ seo:
   date_modified: 2020-01-15 22:26:17 +0900
 ---
 
-## Preparation
+## Preparation to test
 
 Follow the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installtion of basic environment (Ruby, RubyGem, Bundler and Jekyll). In order to use the script tools to save time, we also need to install [Python](https://www.python.org/downloads/)(version 3.5 or abover) and [ruamel.yaml](https://pypi.org/project/ruamel.yaml/).
 
