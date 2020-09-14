@@ -61,7 +61,7 @@ pd.merge(dataframe_a, dataframe_b, how='right') # right를 사용하게 �
 
 두 데이터프레임의 공통된 열 데이터가 없을 시 두 데이터프레임을 이어줄 데이터를 지정해야 한다. 이는`left_on, right_on`을 사용하여 공통된 열 데이터를 지정해 병합이 가능하다. 단, 공통된 키데이터가 없을 경우는 `how`의 `inner,outer,left,right`로 적절히 사용해야 한다.
 
-### ```left_on, right_on``` 미사용시
+```left_on, right_on``` 미사용시
 
 ```python
 import pandas as pd

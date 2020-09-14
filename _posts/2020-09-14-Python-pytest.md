@@ -17,7 +17,7 @@ seo:
 우선 Pytest를 실행시키기 위해서는 당연히 라이브러리를 설치해줘야 한다. 아마 Anaconda로 실행시키는 프로젝트라면 기본으로 깔려있겠지만, Python으로 설치했다면 Pypi에서 다운로드를 받아야 한다.
 
 ```sh
-python -m pip install pytest
+python -m pip -U install pytest
 ```
 
 참조 : Pytest 공식 문서 [여기를 클릭](https://docs.pytest.org/en/latest/contents.html)
