@@ -1,44 +1,12 @@
-# Jekyll Theme Chirpy
+# 프리즈의 귀차니즘
 
 [![Build Status](https://travis-ci.com/cotes2020/jekyll-theme-chirpy.svg?branch=master)](https://travis-ci.com/cotes2020/jekyll-theme-chirpy)
 [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
 [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-Language: English | [简体中文](docs/README_zh-CN.md)
+프리즈의 귀차니즘 블로그 전용 Git 컴포넌트로 기술 개발 및 관련 정보에 관한 글들을 포스트로 작성해 사용할 것이다.
 
-A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text exhibition. It will help you easily record, manage and share your knowledge and experience. 
-
-You will get the following features:
-
-* Auto Dark Mode
-* Posts' Last Modified Date
-* Table of Contents
-* Automatically Recommend Related Posts
-* Syntax highlighting
-* Two Level Categories
-* Search
-* Atom Feeds
-* Disqus Comments
-* Google Analytics
-* GA Pageviews (Advanced)
-* SEO Tag
-* Performance Optimization
-
-[**Live Demo** »](https://chirpy.cotes.info)
-
-![devices-mockup](https://raw.githubusercontent.com/cotes2020/jekyll-theme-chirpy/master/assets/img/sample/devices-mockup.png)
-
-## Table of Contents
-
-* [Installing](#installing)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Credits](#credits)
-* [Support](#support)
-* [License](#license)
-
-
-## Installing
+## 설치 방법
 
 ### Prerequisites
 
