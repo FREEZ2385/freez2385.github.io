@@ -4,7 +4,7 @@ date: 2020-09-14 15:30:00 +0900
 categories: [Python, Pytest]
 tags: [Pytest]
 seo:
-  date_modified: 2020-09-14 15:30:00 +0900
+  date_modified: 2020-09-14 15:23:32 +0900
 
 ---
 
