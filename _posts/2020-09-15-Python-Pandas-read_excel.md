@@ -4,7 +4,7 @@ date: 2020-09-15 22:35:00 +0900
 categories: [Python, Pandas]
 tags: [Pandas, read_excel, Dataframe]
 seo:
-  date_modified: 2020-09-14 15:23:32 +0900
+  date_modified: 2020-09-15 22:37:30 +0900
 
 
 ---
