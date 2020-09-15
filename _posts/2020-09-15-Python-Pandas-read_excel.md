@@ -73,14 +73,15 @@ Output :
 
 ## Read_excel 응용
 
-이번 응용에서 사용해볼 것은 read_excel안에서의 파라미터를 직접 사용해 데이터프레임을 편하게 사용해보도록 하겠다.
+이번 응용에서 사용해볼 것은 read_excel안에서의 파라미터를 직접 사용해 데이터프레임을 편하게 사용해보도록 하겠다. 이번 응용부터는 아래의 엑셀 파일을 이용하여 사용해보도록 하겠다.
+
+### 예시 엑셀 파일
+
+![excel_file2](../../assets/img/2020_09_14pandas_read_excel/pandas_read_excel3.png)
 
 ### header
 
 header는 해당 열 위치를 조정해 해당 행의 이름을 header의 데이터로 지정할 수 있다. 다만 header위의 데이터들은 전부 제외되기 때문에 주의하기 바란다.
-
-예시 엑셀 파일
-![excel_file2](../../assets/img/2020_09_14pandas_read_excel/pandas_read_excel3.png)
 
 ```python
 # get excel data to dataframe from 7 rows to header
