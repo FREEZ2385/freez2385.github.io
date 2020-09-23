@@ -1,7 +1,7 @@
 ---
 title: Python전용 테스트 라이브러리 Pytest
 date: 2020-09-14 15:30:00 +0900
-categories: [Python, Pytest]
+categories: [Development, Python, Pytest]
 tags: [Pytest]
 seo:
   date_modified: 2020-09-14 21:23:05 +0900

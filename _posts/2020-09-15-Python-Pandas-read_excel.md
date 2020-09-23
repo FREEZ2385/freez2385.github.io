@@ -1,7 +1,7 @@
 ---
 title: Pandas에서 Excel파일을 데이터프레임화로 변경 (pandas.read_excel)
 date: 2020-09-15 22:35:00 +0900
-categories: [Python, Pandas]
+categories: [Development, Python, Pandas]
 tags: [Pandas, read_excel, Dataframe]
 seo:
   date_modified: 2020-09-15 22:37:30 +0900
@@ -22,6 +22,7 @@ seo:
 ### 필요 라이브러리
 
 pandas==1.1.0 # read_excel을 포함한 라이브러리
+
 numpy==1.19.2 # 데이터의 수치화
 
 ### 사용 환경 툴
