@@ -4,7 +4,7 @@ date: 2020-09-15 22:35:00 +0900
 categories: [Development, Python, Pandas]
 tags: [Pandas, read_excel, Dataframe]
 seo:
-  date_modified: 2020-09-15 22:37:30 +0900
+  date_modified: 2020-09-23 21:43:04 +0900
 
 
 ---

@@ -4,7 +4,7 @@ date: 2020-09-23 21:20:00 +0900
 categories: [Development, Python, Django Restframework]
 tags: [Django, DjangoRestframework]
 seo:
-  date_modified: 2020-09-15 22:37:30 +0900
+  date_modified: 2020-09-23 21:43:04 +0900
 
 
 
