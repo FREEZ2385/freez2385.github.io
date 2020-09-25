@@ -12,3 +12,6 @@ Gemfile.lock
 
 # bundle cache
 vendor
+
+# post samples
+posts_samples
