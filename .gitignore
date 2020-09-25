@@ -14,4 +14,4 @@ Gemfile.lock
 vendor
 
 # post samples
-posts_samples
+posts_samples/
