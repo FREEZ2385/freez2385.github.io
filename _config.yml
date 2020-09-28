@@ -13,7 +13,7 @@ title: 프리즈의 귀차니즘                          # the main title
 tagline: 일본에 거주하는 개발자의 기술 블로그  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.
+  일본에서 이런 저런 개발공부를 하며 프론트엔드, 백엔드, 인프라를 넘나들고 싶은 개발자의 블로그
 
 # Replace with your domain, e.g. 'https://username.github.io'
 url: 'https://freez2385.github.io'
