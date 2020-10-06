@@ -10,7 +10,6 @@ seo:
 
 
 
-
 ---
 
 **본 포스트는 MacOS 10.15.7 을 기준으로 작성하였습니다.**
@@ -103,7 +102,7 @@ django-admin startproject ProjectForDocker
 프로젝트가 생성되었다면 폴더 안으로 들어가서 Dockerfile을 생성하도록 하겠다. Django의 Dockerfile은 다음과 같다.
 
 ```dockerfile
-FROM python:3
+FROM python:3.7
 ENV PYTHONUNBUFFERED=0
 RUN mkdir /code
 WORKDIR /code
@@ -115,10 +114,16 @@ COPY . /code/
 이 Dockerfile에 사용된 각 명령어들을 나열하겠다.
 
 `FROM` : Docker Hub에서 이미지를 가져와서 컨테이너에 적용시킨다.
+
 `ENV` : 환경설정을 실행해주는 명령어다. Windows의 cmd로는 export와 같은 개념이다.
+
 `RUN` : 이미지내의 파일 실행 혹은 행동들을 명령어로 표현하는 명령어다.
+
 `WORKDIR` : RUN혹은 COPY를 실행시킬 위치를 지정하는 명령어이다.
+
 `COPY` : 빌드시 들어가는 로컬 파일들을 이미지로 직접 복사하는 명령어이다. (첫번째 인수: 로컬에서 가져올 파일 위치 혹은 파일명, 두번째 인수: 이미지내에 이동시킬 파일 위치)
+
+
 
 이렇게 각 Dockerfile의 명령어를 작성해보았다. 빌드하기에 앞서 Python의 라이브러리들을 설치해야 하는 것이 우선이다. Python의 라이브러리를 일괄 설치해주는 `requirements.txt` 를 작성해야 한다. 우선 기본적으로 Django가 필요하며 Django의 디폴트 DB인 Postgres에 접속이 필요하므로 `requirements.txt` 를 이렇게 작성해보도록 하겠다.
 
@@ -140,7 +145,7 @@ docker build --tag djangofordocker:1.0 .
 REPOSITORY               TAG                 IMAGE ID            CREATED              SIZE
 djangofordocker          1.0                 b53b44b7865d        About a minute ago   926MB
 testecho                 1.0                 df5dac324dba        34 minutes ago       5.57MB
-python                   3                   bbf31371d67d        7 days ago           882MB
+python                   3.7                 bbf31371d67d        7 days ago           882MB
 alpine                   latest              a24bb4013296        4 months ago         5.57MB
 ```
 
