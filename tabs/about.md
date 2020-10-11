@@ -1,6 +1,5 @@
 ---
-title: About
-
+title: 프리즈(Freez)
 # The About page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -8,4 +7,4 @@ title: About
 # MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+### 아직 About 작성중입니다. 최대한 빠른 시일 내로 완성하도록 하겠습니다.
