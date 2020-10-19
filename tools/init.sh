@@ -30,20 +30,18 @@ update_files() {
 
 
 commit() {
-  msg="Updated"
+  msg="[Update]"
 
   if [[ ! -z $(git status categories -s) ]]; then
     git add categories/
-    msg+=" the Categories"
+    msg+="Categories"
     CATEGORIES=true
   fi
 
   if [[ ! -z $(git status tags -s) ]]; then
     git add tags/
     if [[ $CATEGORIES = true ]]; then
-      msg+=","
-    else
-      msg+=" the"
+      msg+=" /"
     fi
     msg+=" Tags"
     TAGS=true
@@ -52,17 +50,14 @@ commit() {
   if [[ ! -z $(git status _posts -s) ]]; then
     git add _posts/
     if [[ $CATEGORIES = true || $TAGS = true ]]; then
-      msg+=","
-    else
-      msg+=" the"
+      msg+=" /"
     fi
     msg+=" Lastmod"
     LASTMOD=true
   fi
 
   if [[ $CATEGORIES = true || $TAGS = true || $LASTMOD = true ]]; then
-    msg+=" for post(s)."
-    git commit -m "[Automation] $msg"
+    git commit -m "[Update] $msg"
   else
     msg="Nothing changed."
   fi
