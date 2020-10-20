@@ -173,6 +173,7 @@ exclude:
 sitemap_exclude:  # Sitemap will exclude the following items.
   fuzzy:
     - /assets/
+    - /j/assets/
   accurate:
     - /norobots/
     - /tabs/
@@ -184,3 +185,13 @@ sitemap_exclude:  # Sitemap will exclude the following items.
     - sitemap.xml
     - robots.txt
     - redirects.json
+    - /j/norobots/
+    - /j/tabs/
+    - /j/categories/
+    - /j/tags/
+    - /j/posts/
+    - /j/404.html
+    - /j/feed.xml
+    - /j/sitemap.xml
+    - /j/robots.txt
+    - /j/redirects.json
