@@ -32,6 +32,18 @@ seo:
 
 -----
 
+## Install
+
+프로젝트를 새로 생성하였으면 Redux와 React-Redux 라이브러리를 설치해주어야 한다. 해당 명령어는 다음과 같다.
+
+```
+npm install --save redux react-redux
+```
+
+
+
+-----
+
 ## File Tree
 
 ```
