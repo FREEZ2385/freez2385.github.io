@@ -1,6 +1,6 @@
 ---
 title: AWS Amplify를 이용해 github소스로 React웹 어플리케이션 구축
-date: 2021-09-16 22:30:00 +0900
+date: 2021-09-16 22:00:00 +0900
 categories: [Development, AWS]
 tags: [AWS, Github, React]
 seo:
@@ -48,25 +48,25 @@ AWS Amplify는 실제로 웹 어플리케이션 뿐만 아닌 모바일 어플�
 
 AWS 계정으로 웹 콘솔로 들어가면 AWS Amplify로 들어가면 처음 이용하는 유저는 어플리케이션을 생성할 수 있게 된다.
 
-![amplify1](../../assets/img/2021_09_16-aws_amplify/amplify1.png)
+![amplify1](../../assets/img/2021_09_16-aws_amplify/amplify_1.png)
 
 여기서 우측의 주황색 버튼으로 New App을 들어가보자 여기서 우리는 웹을 호스팅을 하는 것이기 때문에 `Host Web App`을 선택한다.
 
-![amplify2](../../assets/img/2021_09_16-aws_amplify/amplify2.png)
+![amplify2](../../assets/img/2021_09_16-aws_amplify/amplify_2.png)
 
 호스트로 들어가면 동기화할 플랫폼을 선택할 수 있다. Github 혹은 Gitlab같이 git를 통해 이용할수 있거나 혹은 Deploy Without Git Provider를 통해 파일을 직접 업로드 할 수 있다.
 
 필자는 Github를 주로 사용하기 때문에 Github를 선택하였다. 처음으로 Github를 선택하면 계정과 동기화해야하는 화면이 나온다. github와 동기화가 완료되면 계정내의 리포지토리가 전부 표시된다.
 
-![amplify3](../../assets/img/2021_09_16-aws_amplify/amplify3.png)
+![amplify3](../../assets/img/2021_09_16-aws_amplify/amplify_3.png)
 
 이렇게 React 프로젝트가 담긴 리포지토리가 표시된다면 선택하고 호스팅할 브런치를 선택할 수 있다. 프로덕션 혹은 스테이징 별로 호스팅하고 싶으면 우선 스테이징을 먼저 선택 후 호스팅 한 후에 개별로 프로덕션을 따로 빌드 가능하다.
 
-![amplify4](../../assets/img/2021_09_16-aws_amplify/amplify4.png)
+![amplify4](../../assets/img/2021_09_16-aws_amplify/amplify_4.png)
 
 리포지토리를 선택했다면 프로젝트 내 소스들을 인식해 자동으로 node의 빌드 환경으로 작성되었다. 프론트엔드 이외에 백엔드를 사용하면 그 밑에 새롭게 빌드 설정을 작성하거나 따로 테스트 혹은 빌드에 필요한 명령어가 필요하면 빌드 설정에 작성하면 된다.
 
-![amplify5](../../assets/img/2021_09_16-aws_amplify/amplify5.png)
+![amplify5](../../assets/img/2021_09_16-aws_amplify/amplify_5.png)
 
 이렇게 빌드 설정을 하면 최종적으로 어플리케이션을 확인 할 수 있고 밑에 `저장 및 배포` 를 누르면 완료된다.
 
@@ -74,7 +74,7 @@ AWS 계정으로 웹 콘솔로 들어가면 AWS Amplify로 들어가면 처음 �
 
 ## AWS Amplify를 이용한 어플리케이션 관리
 
-![amplify6](../../assets/img/2021_09_16-aws_amplify/amplify6.png)
+![amplify6](../../assets/img/2021_09_16-aws_amplify/amplify_6.png)
 
 저장과 배포가 완료되면 이렇게 자동으로 프로비저닝부터 시작해 빌드, 테스트, 배포까지 처리해준다. 그리고 화면 및에 나오는 URL이 현재 배포된 호스팅 주소이다. 여기서 호스팅 주소를 바꾸고 싶으면 AWS Amplify가 아닌 `AWS Route 53` 이라는 곳에서 호스팅 주소를 구매하여 등록이 가능하다.
 
