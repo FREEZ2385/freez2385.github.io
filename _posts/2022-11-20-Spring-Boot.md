@@ -1,11 +1,10 @@
 ---
-
 title: VSCode를 사용하여 Spring Boot API 작성
 date: 2022-11-20 17:00:00 +0900
 categories: [Development, Java]
 tags: [VSCode, Java, SpringBoot]
 seo:
-  date_modified: 2022-11-20 17:00:00 +0900
+  date_modified: 2022-11-20 17:25:09 +0900
 
 
 

@@ -1,11 +1,10 @@
 ---
-
 title: Github Actions를 이용해 CI/CD를 구축
 date: 2021-09-21 22:00:00 +0900
 categories: [Development, CICD]
 tags: [Github, CICD]
 seo:
-  date_modified: 2021-09-22 00:45:15 +0900
+  date_modified: 2021-09-22 00:47:17 +0900
 
 
 
