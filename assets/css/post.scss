@@ -1,5 +1,6 @@
 ---
 ---
+
 /*!
   Individual styles for Post
   v2.0
@@ -7,13 +8,14 @@
   © 2019 Cotes Chung
   MIT License
 */
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:400,700&display=swap&subset=korean');
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:400,700&display=swap&subset=korean");
 
 .post img {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   max-width: 100%;
   height: auto;
+  cursor: zoom-in;
   // filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.08));
   position: relative;
   left: 50%;
@@ -29,7 +31,7 @@
 }
 
 .post-navigation {
-  padding: 1rem .2rem;
+  padding: 1rem 0.2rem;
   margin-bottom: 2rem;
 }
 
@@ -62,25 +64,25 @@
 .post-navigation a > p {
   font-size: 1.1rem;
   line-height: 1.2rem;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   white-space: normal;
 }
 
 .post-navigation a:first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  left: .5px;
+  left: 0.5px;
 }
 
 .post-navigation a:last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  right: .5px;
+  right: 0.5px;
 }
 
 .post-navigation a::before {
   color: var(--text-muted-color, gray);
-  font-size: .65rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
 }
 
@@ -111,45 +113,44 @@
   position: sticky;
   top: 2rem;
   transition: top 0.2s ease-in-out;
-  animation: fade-up .8s;
+  animation: fade-up 0.8s;
 }
 
 #toc-wrapper.topbar-down {
   top: 6rem;
 }
 
-#toc-wrapper>h3 {
+#toc-wrapper > h3 {
   font-size: 1rem;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   color: gray;
 }
 
-#toc li>a {
+#toc li > a {
   padding-top: 0;
 }
-
 
 /*--- Related Posts ---*/
 
 #related-posts > h3 {
   color: gray;
   font-size: 1.1rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 #related-posts .card {
   border: 1px solid var(--main-wrapper-bg, #f1f1f1);
   background-color: var(--card-bg);
   box-shadow: 0 0 5px 0 var(--main-wrapper-bg, rgba(234, 234, 234, 0.7686274509803922));
-  -webkit-transition: all .3s ease-in-out;;
-  -moz-transition: all .3s ease-in-out;;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #related-posts .card:hover {
   -webkit-transform: translate3d(0, -3px, 0);
   transform: translate3d(0, -3px, 0);
-  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.08));
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.08));
 }
 
 #related-posts .card h3 {
@@ -157,12 +158,12 @@
 }
 
 #related-posts .timeago {
-  color: var(--text-muted-color, rgba(30,55,70,.4));
+  color: var(--text-muted-color, rgba(30, 55, 70, 0.4));
 }
 
 #related-posts p {
-  font-size: .9rem;
-  margin-bottom: .5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -206,15 +207,15 @@
     content: "\2022";
     color: rgba(158, 158, 158, 0.8);
     font-weight: bold;
-    padding-left: .5rem;
-    padding-right: .3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.3rem;
   }
 
   .post .post-meta.flex-column {
-    -webkit-box-orient: horizontal!important;
-    -webkit-box-direction: normal!important;
-    -ms-flex-direction: row!important;
-    flex-direction: row!important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
   }
 }
 
@@ -268,13 +269,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  nav[data-toggle=toc] .nav-link.active,
-  nav[data-toggle=toc] .nav-link.active:focus,
-  nav[data-toggle=toc] .nav-link.active:hover,
-  nav[data-toggle=toc] .nav>li>a:focus,
-  nav[data-toggle=toc] .nav>li>a:hover {
+  nav[data-toggle="toc"] .nav-link.active,
+  nav[data-toggle="toc"] .nav-link.active:focus,
+  nav[data-toggle="toc"] .nav-link.active:hover,
+  nav[data-toggle="toc"] .nav > li > a:focus,
+  nav[data-toggle="toc"] .nav > li > a:hover {
     /* Override BS */
-    color: var(--toc-highlight)!important;
-    border-left-color: var(--toc-highlight)!important;
+    color: var(--toc-highlight) !important;
+    border-left-color: var(--toc-highlight) !important;
   }
 }
