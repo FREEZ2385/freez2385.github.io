@@ -13,9 +13,9 @@
 
   <title>
   {%- if page.layout == "home" -%}
-    {{- site.title -}}
+    {%- t profile.title -%}
   {%- else -%}
-    {{ page.title }} | {{ site.title }}
+    {{ page.title }} | {%- t profile.title -%}
   {%- endif -%}
   </title>
 
@@ -77,7 +77,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/categories.css">
   {% endif %}
 
-  {% if page.title == '태그' and page.layout == 'page' %}
+  {% if page.title == 'Tags' and page.layout == 'page' %}
     <link rel="preload" href="{{ site.baseurl }}/assets/css/tags.css" as="style">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tags.css">
   {% endif %}
@@ -87,7 +87,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/category-tag.css">
   {% endif %}
 
-  {% if page.title == '포스트 이력' and page.layout == 'page' %}
+  {% if page.title == 'Archives' and page.layout == 'page' %}
     <link rel="preload" href="{{ site.baseurl }}/assets/css/archives.css" as="style">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/archives.css">
   {% endif %}

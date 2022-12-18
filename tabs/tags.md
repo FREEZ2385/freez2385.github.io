@@ -1,5 +1,5 @@
 ---
-title: 태그
+title: Tags
 
 # All the Tags of posts.
 # v2.0
