@@ -1,5 +1,5 @@
 ---
-title: 프리즈(Freez)
+title: About
 
 namespace: tabs.about
 permalink: /tabs/about/
