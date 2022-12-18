@@ -1,5 +1,5 @@
 ---
-title: 포스트 이력
+title: Archives
 # The Archives of posts.
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy

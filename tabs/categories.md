@@ -1,6 +1,5 @@
 ---
-title: 카테고리
-
+title: Categories
 # All the Categories of posts
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -11,17 +10,17 @@ title: 카테고리
 {% assign sort_categories = site.categories | sort %}
 
 {% for category in sort_categories %}
-  {% assign category_name = category | first %}
-  {% assign posts_of_category = category | last %}
-  {% assign first_post = posts_of_category[0] %}
+{% assign category_name = category | first %}
+{% assign posts_of_category = category | last %}
+{% assign first_post = posts_of_category[0] %}
 
-  {% if category_name == first_post.categories[0] %}
-    {% assign sub_categories = "" %}
-    {% for post in posts_of_category %}
-      {% if post.categories.size > 1 %}
-        {% assign sub_categories = sub_categories | append: post.categories[1] | append: "|" %}
-      {% endif %}
-    {% endfor %}
+{% if category_name == first_post.categories[0] %}
+{% assign sub_categories = "" %}
+{% for post in posts_of_category %}
+{% if post.categories.size > 1 %}
+{% assign sub_categories = sub_categories | append: post.categories[1] | append: "|" %}
+{% endif %}
+{% endfor %}
 
     {% assign sub_categories = sub_categories | split: "|" | uniq | sort %}
     {% assign sub_categories_size = sub_categories | size %}
@@ -41,10 +40,14 @@ title: 카테고리
         <span class="text-muted small font-weight-light pl-2">
         {% if sub_categories_size > 0 %}
           {{ sub_categories_size }}
-          {% if sub_categories_size > 1 %}카테고리{% else %}카테고리{% endif %},
+          {% if sub_categories_size > 1 %}
+          {% t categories_label.category %}
+          {% else %}
+          {% t categories_label.category %}
+          {% endif %},
         {% endif %}
           {{ top_posts_size }}
-          포스트{% if top_posts_size > 1 %}{% endif %}
+          {% t categories_label.post %}{% if top_posts_size > 1 %}{% endif %}
         </span>
       </span>
 
@@ -68,7 +71,7 @@ title: 카테고리
           <i class="far fa-folder fa-fw"></i>&nbsp;<a href="{{ site.baseurl }}/categories/{{ sub_category | replace: ' ', '-' | downcase | url_encode }}/">{{ sub_category }}</a>
           {% assign posts_size = site.categories[sub_category] | size %}
           <span class="text-muted small font-weight-light pl-2">{{ posts_size }}
-            포스트{% if posts_size > 1 %}{% endif %}
+            {% t categories_label.post %}{% if posts_size > 1 %}{% endif %}
           </span>
         </li>
         {% endfor %}
@@ -78,7 +81,7 @@ title: 카테고리
 
   </div> <!-- .card -->
 
-  {% endif %}
+{% endif %}
 {% endfor %}
 
 <script src="{{ site.baseurl }}/assets/js/dist/category-collapse.min.js" async></script>
