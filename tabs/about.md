@@ -1,8 +1,5 @@
 ---
-title: About
-
-namespace: tabs.about
-permalink: /tabs/about/
+title: 프리즈(Freez)
 # The About page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -10,4 +7,4 @@ permalink: /tabs/about/
 # MIT License
 ---
 
-{% tf _tabs/about.md %}
+### 아직 About 작성중입니다. 최대한 빠른 시일 내로 완성하도록 하겠습니다.
