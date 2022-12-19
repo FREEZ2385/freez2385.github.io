@@ -5,18 +5,23 @@
 # MIT Licensed
 
 tabs:
-  - { name: "홈", icon: 'fas fa-home' }
-  - { name: "카테고리", path: tabs, url: categories, icon: 'fas fa-stream' }
-  - { name: "Tags", path: tabs, url: tags, icon: 'fas fa-tags' }
-  - { name: "포스트 이력", path: tabs, url: archives, icon: 'fas fa-archive'}
-  - { name: "Portfolio", path: tabs, url: about, icon: 'fas fa-info'}
-
-panel:
-  lastmod: "최근 포스트"
-  trending_tags: "태그"
-  toc: "목차"
+  - { name: side_bar.home, icon: "fas fa-home" }
+  - {
+      name: side_bar.categories,
+      path: tabs,
+      url: categories,
+      icon: "fas fa-stream",
+    }
+  - { name: side_bar.tags, path: tabs, url: tags, icon: "fas fa-tags" }
+  - {
+      name: side_bar.archives,
+      path: tabs,
+      url: archives,
+      icon: "fas fa-archive",
+    }
+  - { name: side_bar.about, path: tabs, url: about, icon: "fas fa-info" }
 
 post:
   relate_posts: "Further Reading"
 
-search_hint: "Search"   # text show on search bar
+search_hint: "Search" # text show on search bar
