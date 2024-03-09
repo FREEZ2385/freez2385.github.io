@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from"
   gem "jekyll-multiple-languages-plugin"
   gem "jekyll-seo-tag", "~> 2.6.1"
+  gem 'jekyll-environment-variables'
 end
 
 group :test do
