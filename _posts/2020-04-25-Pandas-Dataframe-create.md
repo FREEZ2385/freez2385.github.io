@@ -4,7 +4,7 @@ date: 2020-04-25 13:30:00 +0900
 categories: [Development, Python, Pandas]
 tags: [Dataframe]
 seo:
-  date_modified: 2020-09-23 21:43:04 +0900
+  date_modified: 2022-12-19 19:38:17 +0900
 ---
 
 # Pandas Dataframe 생성 및 이용
