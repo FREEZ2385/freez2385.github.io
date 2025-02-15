@@ -111,7 +111,7 @@ export const ButtonComponent = ({ ...props }) => {
     const sizeStyle = buttonStyle();
 
     return (
-        <Button variant="contained" style={{ borderRadius: 20,marginRight: 20, padding: '10px 5%',}} color="Secondary" className={sizeStyle[size]} onClick={onClick}>
+        <Button variant="contained" style={{ borderRadius: 20,marginRight: 20, padding: '10px 5%'}} color="Secondary" className={sizeStyle[size]} onClick={onClick}>
         {text}
         </Button>
         );
