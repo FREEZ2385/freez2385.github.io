@@ -5,15 +5,6 @@ categories: [Development, React]
 tags: [React, Component, StoryBook]
 seo:
   date_modified: 2020-10-20 20:00:00 +0900
-
-
-
-
-
-
-
-
-
 ---
 
 **본 포스트는 MacOS 10.15.7 을 기준으로 작성하였습니다.**
@@ -30,7 +21,7 @@ seo:
 
 ### StoryBook example repository (Freez Github) : [ui-storybook](https://github.com/FREEZ2385/ui-storybook)
 
------
+---
 
 ## 설치
 
@@ -82,57 +73,63 @@ getstorybook init
 
 React의 기본적인 컴포넌트들로 생성되어 Example File로 구성되어 있다. 이제 각각의 컴포넌트를 스토리에 집어넣어보도록 하겠다.
 
------
+---
 
 ## 스토리 작성
 
 컴포넌트를 작성했다면 Stories 폴더 안에 스토리를 작성할 수 있다. 필자는 이전에 작성한 Material-UI의 컴포넌트들을 이용해보도록 하겠다. 하지만 코드 그대로를 쓰지 않고 조금 변형해서 사용하지만 사용에는 큰 문제는 없다. 컴포넌트 중에 버튼 컴포넌트를 추가해보도록 하겠다. 우선 스토리에 작성하기 위한 컴포넌트 코드를 수정해보았다.
 
 ```javascript
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import PropTypes from 'prop-types';
-import { Button } from '@material-ui/core';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import PropTypes from "prop-types";
+import { Button } from "@material-ui/core";
 
 const buttonStyle = makeStyles((theme) => ({
-    large: {
-      width: 256,
-    },
-    medium: {
-      width: 164,
-    },
-    small: {
-      width: 75,
-    },
-  }));
+  large: {
+    width: 256,
+  },
+  medium: {
+    width: 164,
+  },
+  small: {
+    width: 75,
+  },
+}));
 
 export const ButtonComponent = ({ ...props }) => {
-    const { text, size, onClick } = props;
-    const sizeStyle = buttonStyle();
+  const { text, size, onClick } = props;
+  const sizeStyle = buttonStyle();
 
-    return (
-        <Button variant="contained" style={{ borderRadius: 20,marginRight: 20, padding: '10px 5%'}} color="Secondary" className={sizeStyle[size]} onClick={onClick}>
-        {text}
-        </Button>
-        );
-}
+  return (
+    <Button
+      variant="contained"
+      style={{ borderRadius: 20, marginRight: 20, padding: "10px 5%" }}
+      color="Secondary"
+      className={sizeStyle[size]}
+      onClick={onClick}
+    >
+      {text}
+    </Button>
+  );
+};
 ```
 
- 기존에 Material-UI에 작성한 컴포넌트를 그대로 가져와서 스토리에 작성해보도록 하겠다. 이때 스토리의 작성 파일명은 `컴포넌트명.stories.js` 로 작성해주어야 한다. 이런 포맷 방식은 `./storybook/main.js` 에서 바꿀 수 있으니 참조하기 바란다. 이렇게 스토리 추가를 위한 파일명으로 필자는 컴포넌트명과 동일하게 `ButtonComponent.stories.js` 로 작성해보았다. 물론 stories 파일에 넣는 것은 잊지 말아야 한다.
+기존에 Material-UI에 작성한 컴포넌트를 그대로 가져와서 스토리에 작성해보도록 하겠다. 이때 스토리의 작성 파일명은 `컴포넌트명.stories.js` 로 작성해주어야 한다. 이런 포맷 방식은 `./storybook/main.js` 에서 바꿀 수 있으니 참조하기 바란다. 이렇게 스토리 추가를 위한 파일명으로 필자는 컴포넌트명과 동일하게 `ButtonComponent.stories.js` 로 작성해보았다. 물론 stories 파일에 넣는 것은 잊지 말아야 한다.
 
 해당 소스 코드는 다음과 같다.
 
 ```javascript
-import React from 'react';
-import { ButtonComponent } from '../component/Atoms/ButtonComponent'
+import React from "react";
+import { ButtonComponent } from "../component/Atoms/ButtonComponent";
 
 export default {
-  title: 'Atoms/ButtonComponent',
+  title: "Atoms/ButtonComponent",
   component: ButtonComponent,
   argTypes: {
-    text: { control: 'text' },
-    size: { control: 'text' },
-    onClick: { control: '' },
+    text: { control: "text" },
+    size: { control: "text" },
+    onClick: { control: "" },
   },
 };
 
@@ -140,24 +137,23 @@ const Template = (args) => <ButtonComponent {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  text: 'text',
-  size: 'small',
-  onClick: '',
+  text: "text",
+  size: "small",
+  onClick: "",
 };
-
 ```
 
-소스 분석에 들어가보도록 하겠다. 우선 기본적으로 꼭 필요한 것은 `export default, export const Primary` 의 내용들이다. 위의 default는 스토리의 설정을 나타낸다. 
+소스 분석에 들어가보도록 하겠다. 우선 기본적으로 꼭 필요한 것은 `export default, export const Primary` 의 내용들이다. 위의 default는 스토리의 설정을 나타낸다.
 
-title은 컴포넌트 명이며 여기서 `/` 를 통해 카테고리 형성이 가능하다. 때문에 같은 카테고리 안에 여러가지 컴포넌트를 넣을 수 있는 것이 가능하다. 
+title은 컴포넌트 명이며 여기서 `/` 를 통해 카테고리 형성이 가능하다. 때문에 같은 카테고리 안에 여러가지 컴포넌트를 넣을 수 있는 것이 가능하다.
 
-component는 파라미터에 아무것도 지정하지 않은 단순한 컴포넌트의 형태를 가져오는 것이다. 
+component는 파라미터에 아무것도 지정하지 않은 단순한 컴포넌트의 형태를 가져오는 것이다.
 
 argTypes는 컴포넌트에 필요한 인수와 타입을 작성하는 것이다. 여기서 text 혹은 size 같이 글자로 작성해야하는 타입 혹은 다른 타입을 control키에서 변경이 가능하다.
 
 그리고 각 const의 export는 예시 컴포넌트를 보여준다. 예를 들어 Primary라는 이름을 가진 버튼 컴포넌트에는 이런 글자에 사이즈는 이렇게로 지정하면서 컴포넌트들을 이렇게 사용할 수 있다는 것을 표시하기 위한 기능이라고 볼 수 있다.
 
------
+---
 
 ## 스토리북 실행
 
