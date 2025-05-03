@@ -104,7 +104,7 @@ export const ButtonComponent = ({ ...props }) => {
   return (
     <Button
       variant="contained"
-      style={{ borderRadius: 20, marginRight: 20, padding: "10px 5%" }}
+      style={ borderRadius: 20, marginRight: 20, padding: "10px 5%" }
       color="Secondary"
       className={sizeStyle[size]}
       onClick={onClick}
