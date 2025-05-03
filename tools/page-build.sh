@@ -1,3 +1,5 @@
+set -e
+
 rm -rf _site/
 git checkout master
 docker build -t freezblog:0.1 ./
