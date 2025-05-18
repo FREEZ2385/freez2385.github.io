@@ -5,12 +5,7 @@ categories: [Development, Python, Django Restframework]
 tags: [Django, DjangoRestframework]
 seo:
   date_modified: 2020-09-23 21:43:04 +0900
-
-
-
 ---
-
-
 
 **본 포스트는 MacOS 10.15.6 을 기준으로 작성하였습니다.**
 
@@ -49,7 +44,7 @@ Django Rest Framework를 설치하고 나면 실제로 RestfulAPI 서버로 쓰�
         └── wsgi.py
 ```
 
-위에 *기호는 기본 프로젝트 디렉토리에서 수정을 조금 한 파일이다. 실제로 모델을 등록하고 추가하기 위해 한 내용들이라고 할 수 있다. Django의 Model등록 방법은 해당 포스트에서 확인하기 바란다.
+위에 \*기호는 기본 프로젝트 디렉토리에서 수정을 조금 한 파일이다. 실제로 모델을 등록하고 추가하기 위해 한 내용들이라고 할 수 있다. Django의 Model등록 방법은 해당 포스트에서 확인하기 바란다.
 
 <u>추가 예정</u>
 
@@ -69,7 +64,7 @@ class Book(models.Model):
 
 그리고 이제 본격적인 RestFramework를 넣어보기로 하겠다. 우선 Django RestFramework의 기본적인 구상은 이렇다.
 
-![rest_framework1](../../assets/img/2020_09_23_python_django_restframework1/rest_framework1.png)
+![rest_framework1](https://res.cloudinary.com/dabajegcx/image/upload/v1747525897/rest_framework1_iruixr.png)
 
 기본적인 Django 의 DB에서 클라이언트의 흐름도에서 Serializer가 추가되었다. Serializer는 기존 HTML의 형태로 랜더링된 Queryset를 Restful에 대한 JSON으로 매핑하여 Response에 보내지는 역할을 하고 있다. 이제 실제로 넣어보도록 하겠다. 해당 내용은 공식 문서를 기반으로 재작성해보았습니다. 공식 문서는 밑의 URL를 참조해주시기 바란다.
 
@@ -104,7 +99,7 @@ REST_FRAMEWORK = {
 
 ## Serializers.py
 
-그리고 main 폴더 안에 serializers.py 파일을 새로 만들어 serializer를 보관하는 파일로 지정하는게 편하다. 
+그리고 main 폴더 안에 serializers.py 파일을 새로 만들어 serializer를 보관하는 파일로 지정하는게 편하다.
 
 ```python
 # add serializers.py
@@ -164,7 +159,7 @@ urlpatterns = [
   path('', include(router.urls)),
   # Django Restframework에 로그인 인증을 위한 URL.
   path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    
+
 ]
 
 ```
@@ -198,12 +193,12 @@ python manage.py runserver
 
 실행시킨 후 localhost:8000/main/으로 들어가게 된다면 restframework GUI로 들어갈 수 있다.
 
-![rest_framework2](../../assets/img/2020_09_23_python_django_restframework1/rest_framework2.png)
+![rest_framework2](https://res.cloudinary.com/dabajegcx/image/upload/v1747525902/rest_framework2_u3o7ao.png)
 
-![rest_framework3](../../assets/img/2020_09_23_python_django_restframework1/rest_framework3.png)
+![rest_framework3](https://res.cloudinary.com/dabajegcx/image/upload/v1747525902/rest_framework3_tfwdmm.png)
 
 이렇게 GUI확인이 가능하며 Restful API 테스트가 가능한 Postman을 이용하여 직접 API테스트도 가능하다
 
-![rest_framework4](../../assets/img/2020_09_23_python_django_restframework1/rest_framework4.png)
+![rest_framework4](https://res.cloudinary.com/dabajegcx/image/upload/v1747525902/rest_framework3_tfwdmm.png)
 
 이렇게 Restful API로 백엔드 어플리케이션으로 활용이 가능하며 프론트엔드는 React.js로 사용하여 완벽하게 프론트엔드와 백엔드를 나누어 개발이 가능하다는 점과 응용을 하여 인증과 Get 혹은 Post만 사용 가능하게 권한 설정도 가능하다. 자세한 응용법은 다음 포스트에 작성하겠다.
